@@ -1,3 +1,6 @@
+/*David Alejandro Martínez Vega L´Englisse
+clase 2 ejercicio 1*/
+
 #include <stdio.h>
 
 int main() 
