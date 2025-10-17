@@ -2,24 +2,25 @@
 clase 2 ejercicio 3*/
 
 #include <stdio.h>
-#include <math.h>
 
 int main() 
 {
-    int num;
-    
-    printf("Escriba un numero: \n");
-    scanf("%d", &num);
-    
-    if (num % 2 == 0) 
-    {
-        printf("El numero es par\n");
-        if (num % 3 == 0) {
-            printf("El numero es multiplo de tres\n");
-        } else {
-            printf("El numero no es multiplo de tres\n");
-        }
+    int num1, num2, res;
+
+    printf("Escriba el primer numero (dividendo): \n");
+    scanf("%d", &num1);
+
+    printf("Escriba el segundo numero (divisor): \n");
+    scanf("%d", &num2);
+
+    // El operador '%' calcula el resto de la division
+    res = num1 % num2;
+
+    if (res == 0) {
+        printf("El numero %d es divisible entre %d.\n", num1, num2);
     } else {
-        printf("El numero no es par\n");
+        printf("El numero %d NO es divisible entre %d. El resto es %d.\n", num1, num2, res);
     }
+    
+    return 0;
 }
